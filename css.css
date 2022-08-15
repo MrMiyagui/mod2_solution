@@ -1,0 +1,143 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.content{
+    background-color: gray;
+    border: 1px solid black;
+}
+
+    #content-chicken{
+        background-color: silver;
+    }
+
+    #content-beef{
+        background-color: burlywood;
+    }
+
+    #content-sushi{
+        background-color: goldenrod;
+    }
+
+h3{
+    padding: 7px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+    #h3-chicken{
+        background-color: red;
+        float: right;
+        margin: 0;
+        color: white;
+        width: 33%;
+        text-align: center;
+    }
+
+    #h3-beef{
+        background-color: yellowgreen;
+        float: right;
+        margin: 0;
+        width: 33%;
+        text-align: center;
+    }
+
+    #h3-sushi{
+        background-color: skyblue;
+        float: right;
+        margin: 0;
+        width: 33%;
+        text-align: center;
+    }
+
+.text{
+    clear: right;
+    padding: 15px;
+
+}
+
+/********** desktop view **********/
+@media (min-width: 992px){
+    .col-desktop-chicken, .col-desktop-beef, .col-desktop-sushi{
+        float: left;
+    }
+    .col-desktop-chicken{
+        width: 33%;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-bottom: 10px;
+    }
+
+    .col-desktop-beef{
+        width: 33%;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-bottom: 10px;
+    }
+
+    .col-desktop-sushi{
+        width: 33%;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-bottom: 10px;
+    }
+}
+
+/********** tablet view **********/
+@media (min-width: 768px) and (max-width:991px){
+    .col-tablet-chicken, .col-tablet-beef, .col-tablet-sushi{
+        float: left;
+    }
+    .col-tablet-chicken{
+        width: 49%;
+        margin-left: 5px;
+        margin-right: 1px;
+        margin-bottom: 10px;
+    }
+
+    .col-tablet-beef{
+        width: 49%;
+        margin-left: 5px;
+        margin-right: 1px;
+        margin-bottom: 10px;
+    }
+
+    .col-tablet-sushi{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/********** mobile view **********/
+@media (max-width:767px){
+    .col-mobile-chicken, .col-mobile-beef, .col-mobile-sushi{
+        float: left;
+    }
+    .col-mobile-chicken{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .col-mobile-beef{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .col-mobile-sushi{
+        width: 100%;
+        margin: 10px;
+    }
+}
